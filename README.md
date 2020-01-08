@@ -27,4 +27,8 @@
 
 `nano ~/.vimrc`
 
+- Install gem rubocop for Syntastic.
+
+`gem install rubocop`
+
 - Now turn vim off and on again.
