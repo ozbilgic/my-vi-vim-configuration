@@ -11,11 +11,20 @@ map  <C-n> :tabnew<CR>
 so ~/.vim/plugins.vim
 
 syntax enable
+filetype plugin indent on
+filetype on
+filetype indent on
+filetype plugin on
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
+autocmd FileType eruby setlocal expandtab shiftwidth=2 tabstop=2
+autocmd FileType css setlocal expandtab shiftwidth=2 tabstop=2
+
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
 set number
+set encoding=UTF-8
 
 let NERDTreeShowHidden=1
 
