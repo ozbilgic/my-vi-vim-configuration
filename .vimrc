@@ -18,11 +18,19 @@ colorscheme solarized
 set number
 
 let NERDTreeShowHidden=1
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_check_on_open=1
-let g:syntastic_check_on_wq=0
 
-set statusline+=%warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+let g:ale_linters = {
+\   'ruby': ['standardrb', 'rubocop'],
+\   'python': ['flake8', 'pylint'],
+\   'javascript': ['eslint'],
+\}
+
+let g:ale_fixers = {
+\    'ruby': ['standardrb'],
+\}
+
+let g:ale_fix_on_save = 1
+set statusline=
+set statusline+=%m
+set statusline+=\ %f
+set statusline+=%=
