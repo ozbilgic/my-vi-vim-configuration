@@ -34,3 +34,14 @@ set statusline=
 set statusline+=%m
 set statusline+=\ %f
 set statusline+=%=
+
+" TAB to complate indexed text
+function! InsertTabWrapper()
+  let col = col('.') - 1
+  if !col || getline('.')[col - 1] !~ '\k'
+    return "\<tab>"
+  else
+    return "\<c-p>"
+  endif
+endfunction
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
