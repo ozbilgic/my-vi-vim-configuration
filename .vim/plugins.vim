@@ -7,5 +7,7 @@ Plug 'tpope/vim-rails'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'burntsushi/ripgrep'
-Plug 'scrooloose/syntastic'
+Plug 'chun-yang/auto-pairs'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
 call plug#end()
