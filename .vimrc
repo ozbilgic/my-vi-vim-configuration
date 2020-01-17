@@ -24,6 +24,7 @@ let g:solarized_termcolors=256
 colorscheme solarized
 
 set number
+set shell=bash\ -l
 set encoding=UTF-8
 
 let NERDTreeShowHidden=1
