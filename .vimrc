@@ -30,22 +30,6 @@ set colorcolumn=80
 
 let NERDTreeShowHidden=1
 
-let g:ale_linters = {
-\   'ruby': ['standardrb', 'rubocop'],
-\   'python': ['flake8', 'pylint'],
-\   'javascript': ['eslint'],
-\}
-
-let g:ale_fixers = {
-\    'ruby': ['standardrb'],
-\}
-
-let g:ale_fix_on_save = 1
-set statusline=
-set statusline+=%m
-set statusline+=\ %f
-set statusline+=%=
-
 " TAB to complate indexed text
 function! InsertTabWrapper()
   let col = col('.') - 1
