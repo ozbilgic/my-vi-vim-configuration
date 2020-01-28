@@ -26,6 +26,7 @@ colorscheme solarized
 set number
 set shell=bash\ -l
 set encoding=UTF-8
+set colorcolumn=80
 
 let NERDTreeShowHidden=1
 
