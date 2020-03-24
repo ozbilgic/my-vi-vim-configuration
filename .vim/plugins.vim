@@ -1,4 +1,5 @@
 call plug#begin('~/.vim/plugged')
+Plug 'preservim/nerdtree'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'altercation/vim-colors-solarized'
